@@ -1,0 +1,21 @@
+{
+  "name": "woodsii.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website/Portfolio",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node /Woodsii.github.io/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woodsii/Woodsii.github.io.git"
+  },
+  "author": "Bennett Woods",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Woodsii/Woodsii.github.io/issues"
+  },
+  "homepage": "https://github.com/Woodsii/Woodsii.github.io#readme"
+}
