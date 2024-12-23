@@ -2,17 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Fibonacci & Prime</title>
+        <title>Bennett Woods</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>  
 
-   
-    <body>
-        <header>
-            <h1>
-                Bennett Woods
-            </h1>
-        </header>
-        <hr>
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
 
+    <body>
+        <div class="navbar" hx-get="/index.html" hx-trigger="load"></div>
+        <p> Oh hey kewl! </p>
+    </body>
 </html>
