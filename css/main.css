@@ -6,7 +6,6 @@ ul {
     background-color: #333;
   }
   
-  
   li a {
     display: block;
     color: white;
@@ -18,7 +17,7 @@ ul {
   li a:hover {
     background-color: #111;
   }
-  
-  .nav-li-right {
-    float: right;
+
+  .nav-link {
+    text-transform: none;
   }
