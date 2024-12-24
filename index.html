@@ -4,16 +4,16 @@
         <meta charset="utf-8">
         <title>Bennett Woods</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+        <!-- HTMX -->
+        <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
     </head>  
-
-    <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
-
-    <header>
-        <div class="navbar" hx-get="./navbar.html" hx-trigger="load" hx-swap="outerHTML"></div>
-    </header>
     
     <body>
-        <p> Oh hey kewl! </p>
+        <header>
+            <div class="navbar" hx-get="./navbar.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        </header>
+
+        <div class="body" hx-get="./aboutme.html" hx-trigger="load" hx-swap="innerHTML"></div>
     </body>
 </html>
