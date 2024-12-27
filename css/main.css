@@ -24,8 +24,8 @@
 
   #portolio-list {
     list-style-type: none;
-    margin: 2px;
-    padding: 2px;
+    margin: 0px;
+    padding: 10px 10px;
     overflow: hidden;
     background-color: #333;
   }
