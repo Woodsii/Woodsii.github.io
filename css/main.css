@@ -15,12 +15,12 @@
       text-decoration: none;
   }
 
-  #page-content {
-    width: 65%;
-    margin: auto;
+  body {
+    margin: 0;
+    padding: 0;
   }
-  
-  .navbar {
+
+  #page-content, .navbar {
     width: 65%;
     margin: auto;
   }
@@ -36,12 +36,15 @@
     overflow: hidden;
     background-color: #222222;;
     font-size: 24px;
-    font-weight: 400
+    font-weight: 400; 
+    margin: 0;
+    padding: 0;
   }
 
   .nav-ul li{
     color: white;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
   }
 
@@ -78,15 +81,10 @@
     font-size: 24px
   }
 
-  .portfolio-item a:link {
-    color: #e7abff
-  } 
-  
-  .portfolio-item a:visited {
-    color: #e7abff
-  } 
-
-  .portfolio-item a:active {
+  .portfolio-item a:link,
+  .portfolio-item a:visited,
+  .portfolio-item a:active
+   {
     color: #e7abff
   } 
 
