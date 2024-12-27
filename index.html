@@ -12,6 +12,12 @@
 
         <!-- HTMX -->
         <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+
+        <!-- lastFM API -->
+        <script type="text/javascript" src="lastfm.api.md5.js"></script>
+        <script type="text/javascript" src="lastfm.api.js"></script>
+        <script type="text/javascript" src="lastfm.api.cache.js"></script>
+        <script type="text/javascript" src="json2.js"></script>
     </head>  
 
     <body>
@@ -20,5 +26,18 @@
         </header>
 
         <div id="page-content" hx-get="./home.html" hx-trigger="load" hx-swap="innerHTML"></div>
+
+        <hr>
+
+        <footer>
+            <div id="lastFMPlayer">
+                <img id="albumArt">
+                <a id="trackTitle"></a>
+                <a id="artistName"></a>
+
+                <div id="lastFMErr"></div>
+            </div>
+
+        </footer>
     </body>
 </html>
