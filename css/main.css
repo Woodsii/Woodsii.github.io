@@ -1,3 +1,4 @@
+  /* Site-wide formatting */
   :root {
     font-family: "Averia Serif Libre", serif;
     font-weight: 400;
@@ -13,7 +14,17 @@
   a {
       text-decoration: none;
   }
+
+  #page-content {
+    width: 75vw;
+    margin: auto;
+  }
   
+  #navbar {
+    width: 75vw;
+    margin: auto;
+  }
+
   /* Navbar stuff */
   .nav-ul {
     list-style-type: none;
