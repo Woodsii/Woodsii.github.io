@@ -34,7 +34,10 @@
 
   .nav-ul li a {
     display: block;
-    background-color: #111;
+  }
+  
+  .nav-ul li a:hover {
+    color: #e7abff
   }
 
   .nav-li-right {
