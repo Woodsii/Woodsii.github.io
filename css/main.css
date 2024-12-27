@@ -6,7 +6,7 @@
     background-color: #333;
   }
 
-  .nav-ul a {
+  .nav-ul li a {
     display: block;
     color: white;
     text-align: center;
