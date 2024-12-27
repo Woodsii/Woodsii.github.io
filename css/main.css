@@ -5,19 +5,23 @@
     background-color: #222222;
     color: #ffffff;
   }
+
   div {
       display: block;
   }
+
   a {
       text-decoration: none;
   }
   
+  /* Navbar stuff */
   .nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    font-size: 20px
   }
 
   .nav-ul li{
@@ -29,28 +33,22 @@
 
   .nav-ul li a {
     display: block;
+    background-color: #111;
   }
 
   .nav-li-right {
     float: right
   }
-  
-  .nav-li-right a:hover {
-    background-color: #111;
-  }
 
   .nav-li-left {
     float: left
-  }
-  
-  .nav-li-left a:hover {
-    background-color: #111;
   }
 
   .nav-link {
     text-transform: none;
   }
 
+  /* Portfolio stuff */
   #portolio-list {
     list-style-type: none;
     margin: 0px;
