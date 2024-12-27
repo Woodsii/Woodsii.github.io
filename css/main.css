@@ -58,14 +58,19 @@
     padding: 10px 10px;
     overflow: hidden;
     background-color: #333;
+    margin: 0 0 3px 0
+  }
+
+  .portfolio-item a {
+    font-size: 20px
   }
 
   .portfolio-item a:link {
-    color: white
+    color: #e7abff
   } 
   
   .portfolio-item a:visited {
-    color: white
+    color: #e7abff
   } 
 
   .portfolio-item a:active {
@@ -73,9 +78,9 @@
   } 
 
   .portfolio-item a:hover{
-    color: #e7abff
+    color: white
   } 
 
-  li.portfolio-item:not(:last-child) { 
-    margin-bottom: 3px;  
- }
+  .portfolio-item {
+    margin-bottom: 5px;
+  }
