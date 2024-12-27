@@ -1,23 +1,60 @@
-/* Create a cache object */
-var cache = new LastFMCache();
+var lastfmData = {
+    baseURL:
+      "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
+    // Your Last.fm Username
+    user: "Woodsiii",
+    // Your API key
+    api_key: "399ffcb30ce26e822e1b76e5e1f9e2c0'",
+    additional: "&format=json&limit=1"
+  };
+  
+  var getSetLastFM = function() {
+    $.ajax({
+      type: "GET",
+      url:
+        lastfmData.baseURL +
+        lastfmData.user +
+        "&api_key=" +
+        lastfmData.api_key +
+        lastfmData.additional,
+      dataType: "json",
 
-/* Create a LastFM object */
-var lastfm = new LastFM({
-  apiKey    : '399ffcb30ce26e822e1b76e5e1f9e2c0',
-  apiSecret : '2b2c2ec17dfd339b7550e5f238d67d82',
-  cache     : cache
-});
+      success: function(resp) {
+        var recentTrack = resp.recenttracks.track[0];
+       
+        var formatted ="<img src='https://i.imgur.com/EgWjJry.png'>" + recentTrack.name;
+        $("a#tracktitle")
+          .html(formatted)
+          .attr("href", recentTrack.url)
+          .attr("title", recentTrack.name + " by " + recentTrack.artist["#text"])
+          .attr("target", "_blank");
+  
+        var artistFormatted =
+          "<img src='https://i.imgur.com/fae5XZA.png'>" +
+          recentTrack.artist["#text"];
+        $("a#trackartist")
+          .html(artistFormatted)
+          .attr("title", "Artist : " + recentTrack.artist["#text"]);
 
-let displayPlayingTrack = () => {
-    /* Load some artist info. */
-    const recTracks = lastfm.user.getRecentTracks({
-        limit: 1,
-        user: 'Woodsiii',
-        page: 1,
-        api_key: '399ffcb30ce26e822e1b76e5e1f9e2c0'
-    })
+        $("img#trackart").attr("src", recentTrack.image[2]["#text"]);
+      },
 
-    console.log(recTracks);
-}
-
-setInterval(displayPlayingTrack, 60000)
+      error: function(resp) {
+        $("a#tracktitle").html(
+          "<img src='https://i.imgur.com/EgWjJry.png'>" + "Silence!"
+        );
+        $("img#trackart").attr("src", "https://i.imgur.com/Q6cCswP.jpg");
+        var artistFormatted =
+          "<img src='https://i.imgur.com/fae5XZA.png'>Prashant Shrestha";
+        $("a#trackartist")
+          .html(artistFormatted)
+          .attr("href", "www.prashant.me/");
+      }
+    });
+  };
+  
+  // Get the new one.
+  getSetLastFM();
+  // Start the countdown.
+  setInterval(getSetLastFM, 10 * 1000);
+  
