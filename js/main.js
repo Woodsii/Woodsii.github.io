@@ -4,7 +4,7 @@ var lastfmData = {
     // Your Last.fm Username
     user: "Woodsiii",
     // Your API key
-    api_key: "399ffcb30ce26e822e1b76e5e1f9e2c0'",
+    api_key: "399ffcb30ce26e822e1b76e5e1f9e2c0",
     additional: "&format=json&limit=1"
   };
   
