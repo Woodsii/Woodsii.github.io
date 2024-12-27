@@ -20,35 +20,11 @@ var lastfmData = {
       dataType: "json",
 
       success: function(resp) {
-        var recentTrack = resp.recenttracks.track[0];
-       
-        var formatted ="<img src='https://i.imgur.com/EgWjJry.png'>" + recentTrack.name;
-        $("a#tracktitle")
-          .html(formatted)
-          .attr("href", recentTrack.url)
-          .attr("title", recentTrack.name + " by " + recentTrack.artist["#text"])
-          .attr("target", "_blank");
-  
-        var artistFormatted =
-          "<img src='https://i.imgur.com/fae5XZA.png'>" +
-          recentTrack.artist["#text"];
-        $("a#trackartist")
-          .html(artistFormatted)
-          .attr("title", "Artist : " + recentTrack.artist["#text"]);
-
-        $("img#trackart").attr("src", recentTrack.image[2]["#text"]);
-      },
-
+        console.log(resp);
+      }, 
       error: function(resp) {
-        $("a#tracktitle").html(
-          "<img src='https://i.imgur.com/EgWjJry.png'>" + "Silence!"
-        );
-        $("img#trackart").attr("src", "https://i.imgur.com/Q6cCswP.jpg");
-        var artistFormatted =
-          "<img src='https://i.imgur.com/fae5XZA.png'>Prashant Shrestha";
-        $("a#trackartist")
-          .html(artistFormatted)
-          .attr("href", "www.prashant.me/");
+        console.log('failure....')
+        console.log(resp)
       }
     });
   };
