@@ -5,6 +5,7 @@
     font-style: normal;
     background-color: #222222;
     color: #ffffff;
+    font-size: 16px;
   }
 
   div {
@@ -28,11 +29,10 @@
   /* Navbar stuff */
   .nav-ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #222222;;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400
   }
 
@@ -73,7 +73,7 @@
   }
 
   .portfolio-item a {
-    font-size: 20px
+    font-size: 24px
   }
 
   .portfolio-item a:link {
