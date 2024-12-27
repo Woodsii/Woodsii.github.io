@@ -20,7 +20,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #222222;;
     font-size: 20px;
     font-weight: 400
   }
@@ -55,12 +55,27 @@
   /* Portfolio stuff */
   #portolio-list {
     list-style-type: none;
-    margin: 0px;
     padding: 10px 10px;
     overflow: hidden;
     background-color: #333;
   }
 
-  .portfolio-item a:hover{
-    background-color: #111;
+  .portfolio-item a:link {
+    color: white
   } 
+  
+  .portfolio-item a:visited {
+    color: white
+  } 
+
+  .portfolio-item a:active {
+    color: #e7abff
+  } 
+
+  .portfolio-item a:hover{
+    color: #e7abff
+  } 
+
+  li.portfolio-item:not(:last-child) { 
+    margin-bottom: 3px;  
+ }
