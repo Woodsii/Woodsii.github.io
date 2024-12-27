@@ -7,11 +7,14 @@
   }
 
   .nav-ul li{
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+
+  .nav-ul li a {
+    display: block;
   }
 
   .nav-li-right {
