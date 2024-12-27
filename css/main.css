@@ -5,6 +5,7 @@
     font-style: normal;
     background-color: #222222;
     color: #ffffff;
+    font-size: 16px;
   }
 
   div {
@@ -16,8 +17,7 @@
   }
 
   body {
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
   }
 
   #page-content, .navbar {
@@ -36,9 +36,7 @@
     overflow: hidden;
     background-color: #222222;;
     font-size: 24px;
-    font-weight: 400; 
-    margin: 0;
-    padding: 0;
+    font-weight: 400;
   }
 
   .nav-ul li{
