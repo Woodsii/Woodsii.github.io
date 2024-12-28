@@ -8,7 +8,7 @@ var lastfmData = {
 
   let trackArtImg = document.getElementById("trackart");
   let trackTitleLink = document.getElementById("tracktitle");
-  let trackArtistLink = document.getElementById("trackartist")
+  let trackArtistLink = document.getElementById("trackartist");
 
   var getSetLastFM = function() {
     console.log('Starting the call')
@@ -25,7 +25,7 @@ var lastfmData = {
       success: function(resp) {
         const currPlaying = resp.recenttracks[0];
 
-        console.log(currPlaying.artist.text + ' HUH fuck')
+        console.log(currPlaying.artist + ' HUH fuck')
 
         // manipulate the dom
         trackArtImg.src = currPlaying.image[1]; // 0-3 for various sizes. Curr medium.
