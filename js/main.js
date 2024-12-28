@@ -9,6 +9,7 @@ var lastfmData = {
   };
   
   var getSetLastFM = function() {
+    console.log('Starting the call')
     $.ajax({
       type: "GET",
       url:
