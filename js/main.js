@@ -23,19 +23,19 @@ var lastfmData = {
       dataType: "json",
 
       success: function(resp) {
-        const currPlaying = resp.recenttracks[0];
+        const currPlaying = resp.recenttracks.track[0];
 
         console.log(currPlaying);
-        console.log(currPlaying.artist + ' HUH fuck');
+        console.log(currPlaying.artist['#text'] + ' HUH fuck');
 
         // manipulate the dom
-        trackArtImg.src = currPlaying.image[1]; // 0-3 for various sizes. Curr medium.
+        trackArtImg.src = currPlaying.image[1]['#text']; // 0-3 for various sizes. Curr medium.
         
         trackTitleLink.href = currPlaying.url;
         trackTitleLink.innerHTML = currPlaying.name;
 
         trackArtistLink.href = currPlaying.url
-        trackArtistLink.innerHTML = currPlaying.artist.text
+        trackArtistLink.innerHTML = currPlaying.artist['#text']
 
       }, 
       error: function(resp) {
