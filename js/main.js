@@ -33,5 +33,5 @@ var lastfmData = {
   // Get the new one.
   getSetLastFM();
   // Start the countdown.
-  setInterval(getSetLastFM, 10 * 1000);
+  setInterval(getSetLastFM, 60000);
   
