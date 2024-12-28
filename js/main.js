@@ -1,13 +1,15 @@
 var lastfmData = {
     baseURL:
       "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
-    // Your Last.fm Username
     user: "Woodsiii",
-    // Your API key
     api_key: "399ffcb30ce26e822e1b76e5e1f9e2c0",
     additional: "&format=json&limit=1"
   };
-  
+
+  let trackArtImg = document.getElementById("trackart");
+  let trackTitleLink = document.getElementById("tracktitle");
+  let trackArtistLink = document.getElementById("trackartist")
+
   var getSetLastFM = function() {
     console.log('Starting the call')
     $.ajax({
@@ -21,7 +23,19 @@ var lastfmData = {
       dataType: "json",
 
       success: function(resp) {
-        console.log(resp);
+        const currPlaying = resp.recenttracks[0];
+
+        console.log(currPlaying.artist.text + ' HUH fuck')
+
+        // manipulate the dom
+        trackArtImg.src = currPlaying.image[1]; // 0-3 for various sizes. Curr medium.
+        
+        trackTitleLink.href = currPlaying.url;
+        trackTitleLink.innerHTML = currPlaying.name;
+
+        trackArtistLink.href = currPlaying.url
+        trackArtistLink.innerHTML = currPlaying.artist.text
+
       }, 
       error: function(resp) {
         console.log('failure....')
