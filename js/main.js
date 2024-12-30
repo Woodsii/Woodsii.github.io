@@ -24,9 +24,6 @@ var lastfmData = {
       success: function(resp) {
         const currPlaying = resp.recenttracks.track["0"];
 
-        console.log(currPlaying);
-        console.log(currPlaying.artist['#text'] + ' HUH fuck');
-
         // manipulate the dom
         trackArtImg.src = currPlaying.image[1]['#text']; // 0-3 for various sizes. Curr medium.
         
@@ -47,5 +44,4 @@ var lastfmData = {
   // Get the new one.
   getSetLastFM();
   // Start the countdown.
-  setInterval(getSetLastFM, 60000);
-  
+  setInterval(getSetLastFM, 900000);
