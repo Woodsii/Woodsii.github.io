@@ -23,6 +23,7 @@
   #page-content, .navbar {
     width: 65%;
     margin: auto;
+    padding-bottom: 10px;
   }
 
   /* Body Rules */
@@ -91,7 +92,7 @@
   } 
 
   .portfolio-item {
-    margin-bottom: 8px;
+    padding-bottom: 10px;
   }
 
   /* last.fm widget */
