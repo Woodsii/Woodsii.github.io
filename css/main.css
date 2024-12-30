@@ -79,14 +79,14 @@
     font-size: 24px
   }
 
-  .portfolio-item a:link,
-  .portfolio-item a:visited,
-  .portfolio-item a:active
+  a:link,
+  a:visited,
+  a:active
    {
     color: #e7abff
   } 
 
-  .portfolio-item a:hover{
+  a:hover{
     color: white
   } 
 
