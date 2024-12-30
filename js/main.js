@@ -23,8 +23,10 @@ var lastfmData = {
       dataType: "json",
 
       success: function(resp) {
-        console.log(resp)
-        const currPlaying = resp.recenttracks[0];
+        console.log(resp);
+        console.log(Object.keys(resp));
+
+        const currPlaying = resp.track[0];
 
         console.log(currPlaying);
         console.log(currPlaying.artist['#text'] + ' HUH fuck');
