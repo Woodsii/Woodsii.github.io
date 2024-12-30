@@ -93,3 +93,8 @@
   .portfolio-item {
     margin-bottom: 8px;
   }
+
+  /* last.fm widget */
+  .nowplayingcard{
+    margin: auto
+  }
