@@ -97,9 +97,10 @@
 
   /* last.fm widget */
   .nowplayingcard{
-    margin: auto
+      max-width: fit-content;
+      margin-inline: auto;
   }
 
-  hr{
+  hr {
     width: 65%
   }
