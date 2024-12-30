@@ -23,6 +23,7 @@ var lastfmData = {
       dataType: "json",
 
       success: function(resp) {
+        console.log(resp)
         const currPlaying = resp.recenttracks[0];
 
         console.log(currPlaying);
