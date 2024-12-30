@@ -11,7 +11,6 @@ var lastfmData = {
   let trackArtistLink = document.getElementById("trackartist");
 
   var getSetLastFM = function() {
-    console.log('Starting the call')
     $.ajax({
       type: "GET",
       url:
@@ -23,10 +22,7 @@ var lastfmData = {
       dataType: "json",
 
       success: function(resp) {
-        console.log(resp);
-        console.log(Object.keys(resp));
-
-        const currPlaying = resp.track[0];
+        const currPlaying = resp.recenttracks.track[0];
 
         console.log(currPlaying);
         console.log(currPlaying.artist['#text'] + ' HUH fuck');
