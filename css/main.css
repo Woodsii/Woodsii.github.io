@@ -103,6 +103,10 @@
     border-radius: 15px;
   }
 
+  .nowplayingcontainer-inner{
+    padding: 5px 5px
+  }
+
   .widgetChild{
     display: inline-block;
   }
