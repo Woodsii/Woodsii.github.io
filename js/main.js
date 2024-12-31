@@ -25,7 +25,7 @@ var lastfmData = {
         const currPlaying = resp.recenttracks.track["0"];
 
         // manipulate the dom
-        trackArtImg.src = currPlaying.image[1]['#text']; // 0-3 for various sizes. Curr medium.
+        trackArtImg.src = currPlaying.image[2]['#text']; // 0-3 for various sizes. Curr medium.
         
         trackTitleLink.href = currPlaying.url;
         trackTitleLink.innerHTML = currPlaying.name;
