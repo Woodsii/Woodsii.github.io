@@ -97,10 +97,14 @@
 
   /* last.fm widget */
   .nowplayingcard{
-      max-width: fit-content;
-      margin-inline: auto;
-      background-color: #505050;
-      border-radius: 15px;
+    max-width: fit-content;
+    margin-inline: auto;
+    background-color: #505050;
+    border-radius: 15px;
+  }
+
+  .widgetChild{
+    display: inline-block;
   }
 
   /* Footer */
