@@ -101,11 +101,11 @@
     margin-inline: auto;
     background-color: #505050;
     border-radius: 15px;
-    padding: 15px
+    margin: 10px 10px;
   }
 
   .nowplayingcontainer-inner{
-    padding: 15px 15px
+    padding: 10px 10px 
   }
 
   .widgetChild{
