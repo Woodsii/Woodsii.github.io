@@ -110,6 +110,7 @@
 
   .widgetChild{
     display: inline-block;
+    margin: auto;
   }
 
   /* Footer */
