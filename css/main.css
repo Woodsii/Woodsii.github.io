@@ -115,5 +115,7 @@
 
   /* Footer */
   hr {
-    width: 65%
+    width: 65%;
+    padding-top: 10px;
+    padding-bottom: 10px
   }
